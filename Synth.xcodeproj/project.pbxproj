@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6E4E72062D31BEC7001B6E3D /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4E72052D31BEC7001B6E3D /* AudioKit */; };
+		6E4E720C2D31BF95001B6E3D /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4E720B2D31BF95001B6E3D /* Tonic */; };
+		6E4E720F2D31BFC4001B6E3D /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4E720E2D31BFC4001B6E3D /* SoundpipeAudioKit */; };
+		6E4E72122D31C089001B6E3D /* Controls in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4E72112D31C089001B6E3D /* Controls */; };
+		6E4E72182D31CC3E001B6E3D /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4E72172D31CC3E001B6E3D /* Keyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6E4E71E72D31BE74001B6E3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4E720C2D31BF95001B6E3D /* Tonic in Frameworks */,
+				6E4E720F2D31BFC4001B6E3D /* SoundpipeAudioKit in Frameworks */,
+				6E4E72182D31CC3E001B6E3D /* Keyboard in Frameworks */,
+				6E4E72122D31C089001B6E3D /* Controls in Frameworks */,
+				6E4E72062D31BEC7001B6E3D /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 				6E4E71D82D31BE73001B6E3D /* Synth */,
 				6E4E71E92D31BE74001B6E3D /* SynthTests */,
 				6E4E71F32D31BE74001B6E3D /* SynthUITests */,
+				6E4E72042D31BEC7001B6E3D /* Frameworks */,
 				6E4E71D72D31BE73001B6E3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +104,13 @@
 				6E4E71F02D31BE74001B6E3D /* SynthUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4E72042D31BEC7001B6E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +133,11 @@
 			);
 			name = Synth;
 			packageProductDependencies = (
+				6E4E72052D31BEC7001B6E3D /* AudioKit */,
+				6E4E720B2D31BF95001B6E3D /* Tonic */,
+				6E4E720E2D31BFC4001B6E3D /* SoundpipeAudioKit */,
+				6E4E72112D31C089001B6E3D /* Controls */,
+				6E4E72172D31CC3E001B6E3D /* Keyboard */,
 			);
 			productName = Synth;
 			productReference = 6E4E71D62D31BE73001B6E3D /* Synth.app */;
@@ -195,6 +221,13 @@
 			);
 			mainGroup = 6E4E71CD2D31BE73001B6E3D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6E4E72032D31BEB1001B6E3D /* XCRemoteSwiftPackageReference "AudioKit" */,
+				6E4E720A2D31BF87001B6E3D /* XCRemoteSwiftPackageReference "Tonic" */,
+				6E4E720D2D31BFB6001B6E3D /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+				6E4E72102D31C07F001B6E3D /* XCRemoteSwiftPackageReference "Controls" */,
+				6E4E72162D31CC09001B6E3D /* XCRemoteSwiftPackageReference "Keyboard" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6E4E71D72D31BE73001B6E3D /* Products */;
 			projectDirPath = "";
@@ -402,8 +435,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,8 +464,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +591,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E4E72032D31BEB1001B6E3D /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+		6E4E720A2D31BF87001B6E3D /* XCRemoteSwiftPackageReference "Tonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Tonic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		6E4E720D2D31BFB6001B6E3D /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		6E4E72102D31C07F001B6E3D /* XCRemoteSwiftPackageReference "Controls" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Controls";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+		6E4E72162D31CC09001B6E3D /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Keyboard";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E4E72052D31BEC7001B6E3D /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4E72032D31BEB1001B6E3D /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		6E4E720B2D31BF95001B6E3D /* Tonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4E720A2D31BF87001B6E3D /* XCRemoteSwiftPackageReference "Tonic" */;
+			productName = Tonic;
+		};
+		6E4E720E2D31BFC4001B6E3D /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4E720D2D31BFB6001B6E3D /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		6E4E72112D31C089001B6E3D /* Controls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4E72102D31C07F001B6E3D /* XCRemoteSwiftPackageReference "Controls" */;
+			productName = Controls;
+		};
+		6E4E72172D31CC3E001B6E3D /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4E72162D31CC09001B6E3D /* XCRemoteSwiftPackageReference "Keyboard" */;
+			productName = Keyboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E4E71CE2D31BE73001B6E3D /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct SynthApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SynthView()
         }
     }
 }
